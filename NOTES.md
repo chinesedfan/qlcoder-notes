@@ -30,6 +30,10 @@ ping www.qlcoder.com
 
 职业自带的Chrome插件[EditThisCookie](http://www.editthiscookie.com/start/)。其实Chrome方法多多。
 
+#### 8.数据脱敏
+
+适当地从一个合适年份开始。
+
 #### 10.Basic CSS
 
 你是看不起我前端切图仔。
