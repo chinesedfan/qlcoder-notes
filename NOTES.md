@@ -72,6 +72,10 @@ Chrome Application Tab。
 
 手动修改cookie里面的uuid第一位。
 
+#### 113.File in File
+
+简单的文件流操作。
+
 #### 141.Domain
 
 评论区提到多种命令，我自己是用[在线工具](http://s.tool.chinaz.com/same?s=208.97.177.124&page=)查的。
