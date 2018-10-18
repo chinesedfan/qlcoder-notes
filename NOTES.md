@@ -60,9 +60,21 @@ du -a | sort | tail
 
 对着网页敲。
 
+#### 40.缺失的后缀
+
+一路`file`命令。
+
 #### 45.HTML5
 
 Chrome Application Tab。
+
+#### 55.QR Code
+
+考验你手机摄像头的时候到了，我用了iOS上的QR Reader。
+
+#### 66.Base64
+
+丢到某个div的background里面，需要附加：`data:image/png;base64,`。
 
 #### 78.JSON&XML
 
