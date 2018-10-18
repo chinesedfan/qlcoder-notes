@@ -8,13 +8,15 @@ const max = 1001;
 // if current vote is i, then the validation code is result[i]
 const result = {};
 
+// FIXME: effective at first, but hard to find the rare rest
+//        costs 10h to scan to 22b, which finds ~600
 let i = 1;
 let found = 0;
 while (found <= max) {
     const hash = md5(`${today}${user}${i}`);
     if (hash.substr(0, 6) === '000000') {
         const str = String(i);
-        for (let j = 1; j <= 3; j++) {
+        for (let j = 1; j <= 4; j++) {
             if (addHash(result, +str.substr(0, j), str.substr(j))) found++;
         }
 
