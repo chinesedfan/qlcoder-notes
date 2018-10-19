@@ -42,6 +42,19 @@ ping www.qlcoder.com
 
 需要读一会儿js，在lottery.marquee.js里面打个断点，console修改一下settings.winId。
 
+#### 17.我从哪里来
+
+```
+# 替换掉箭头里面的变量
+curl \
+    -H "Referer: http://cpc.people.com.cn/" \
+    -H "Content-Type: application/x-www-form-urlencoded; charset=UTF-8" \
+    -H "Content-Length: <length>" \
+    -H "Cookie: <cookie>" \
+    -d "answer=referer&_token=<token>" \  #
+    http://www.qlcoder.com/task/17/solve
+```
+
 #### 18.彩虹
 
 OSX自带的数码测色计。
@@ -64,6 +77,10 @@ du -a | sort | tail
 
 单线程跑的，好慢。
 
+#### 35.Markdown
+
+链接太多。Chrome转换编码需要借助插件Charset。验证貌似不严。
+
 #### 39.Vim
 
 对着网页敲。
@@ -79,6 +96,19 @@ Chrome Application Tab。
 #### 55.QR Code
 
 考验你手机摄像头的时候到了，我用了iOS上的QR Reader。
+
+#### 58.抓包
+
+```
+chmod +x 75c9mac.bin
+
+# Mac貌似需要sudo才能tcpdump
+sudo tcpdump 'tcp port 80'
+
+./75c9mac.bin
+```
+
+当然还是直接cat查看文件比较快，也更安全。
 
 #### 66.Base64
 
