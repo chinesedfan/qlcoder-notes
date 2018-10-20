@@ -68,6 +68,16 @@ OSX自带的数码测色计。
 ```
 du -a | sort | tail
 ```
+#### 27.我要建站-1
+
+```
+echo chinesedfan > index.html
+now
+```
+
+#### 27.我要建站-2
+
+使用now的Node.js模式，记得提供npm start脚本。
 
 #### 31.正则表达式
 
@@ -109,6 +119,10 @@ sudo tcpdump 'tcp port 80'
 ```
 
 当然还是直接cat查看文件比较快，也更安全。
+
+#### 59.我要建站-3
+
+缓存丢内存里就行，不需要数据库。
 
 #### 66.Base64
 
