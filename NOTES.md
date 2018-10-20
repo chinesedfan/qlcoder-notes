@@ -124,6 +124,10 @@ sudo tcpdump 'tcp port 80'
 
 缓存丢内存里就行，不需要数据库。
 
+#### 63.无边界地图
+
+复用了Codewars的一个kata，美滋滋。偷懒只尝试了1k次迭代，理论上需要判断游戏状态是否形成循环。
+
 #### 66.Base64
 
 丢到某个div的background里面，需要附加：`data:image/png;base64,`。

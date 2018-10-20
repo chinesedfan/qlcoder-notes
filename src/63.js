@@ -1,10 +1,23 @@
-function getGeneration(cells, generations){
+getGenerationMax([
+    [1, 1, 1],
+    [1, 0, 0],
+    [1, 1, 0]
+], 1000);
+
+function getGenerationMax(cells, generations){
+    var max = countCells(cells);
     var next = cells;
-    while (generations--) {
+    var g = 1;
+    while (g <= generations) {
         next = updateCells(next);
         cropCells(next);
+
+        var c = countCells(next);
+        console.log(`${g++} - ${c} / ${max}`);
+        if (c > max) max = c;
     }
-    return next;
+
+    return max;
 }
 
 function updateCells(cells) {
@@ -58,6 +71,15 @@ function cropCells(cells) {
             cells[r] = row.slice(left, right + 1);
         });
     }
+}
+function countCells(cells) {
+    var count = 0;
+    cells.forEach((row, r) => {
+        row.forEach((cell, c) => {
+            if (cells[r][c]) count++;
+        });
+    });
+    return count;
 }
 
 function makeBigger(cells, border) {
