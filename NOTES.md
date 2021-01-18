@@ -42,6 +42,14 @@ ping www.qlcoder.com
 
 需要读一会儿js，在lottery.marquee.js里面打个断点，console修改一下settings.winId。
 
+#### 16.断点续传
+
+被忽悠使用迅雷了，找半天没什么地方能设置。
+
+```
+curl -H "Range: bytes=12345678901-12345678999" http://www.qlcoder.com/download/hugefile
+```
+
 #### 17.我从哪里来
 
 ```
@@ -103,6 +111,10 @@ now
 
 Chrome Application Tab。
 
+#### 52.BGM
+
+音痴表示彻底放弃，直奔讨论区。
+
 #### 55.QR Code
 
 考验你手机摄像头的时候到了，我用了iOS上的QR Reader。
@@ -143,6 +155,10 @@ sudo tcpdump 'tcp port 80'
 #### 113.File in File
 
 简单的文件流操作。
+
+#### 115.抓包-2
+
+Wireshark：File -> Open，高兴的话可以Filter填写：http，然后File -> Export Objects -> HTTP，最后打开其中的网页。
 
 #### 141.Domain
 
